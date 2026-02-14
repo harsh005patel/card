@@ -4,11 +4,11 @@ import { Receipt, Gavel, User, CheckSquare, FileText } from 'lucide-react';
 export default function Home() {
     return (
         <main className="relative min-h-screen overflow-x-clip" style={{ backgroundColor: '#ebedf5', fontFamily: "'Inter', sans-serif" }}>
-            {/* Background blobs */}
+            {/* Background pills */}
             <div className="absolute w-96 h-96 rounded-full opacity-30 blur-3xl pointer-events-none" style={{ background: '#b4c8ff', top: '10%', left: '30%' }} />
             <div className="absolute w-72 h-72 rounded-full opacity-25 blur-3xl pointer-events-none" style={{ background: '#b4c8ff', bottom: '20%', right: '20%' }} />
 
-            {/* Background decorative pills - Right side stack */}
+            {/* Background  pills */}
             <div className="absolute top-[7%] right-[-150px] md:right-[-250px] opacity-60">
                 <Card variant="background" color="bg-[#c8cde1]" rotation="5" />
             </div>
@@ -42,7 +42,7 @@ export default function Home() {
                     </p>
                 </div>
 
-                {/* Right: Floating cards — stacked on mobile, absolute on desktop */}
+                {/* Right: Floating cards */}
                 {/* Mobile: stacked */}
                 <div className="flex flex-col items-center gap-5 lg:hidden">
                     <Card icon={<Receipt size={24} />} title="Billing" color="bg-blue-600" rotation="0" />
@@ -59,7 +59,7 @@ export default function Home() {
                     <Card icon={<FileText size={24} />} title="Documents" color="bg-gray-900" rotation="0" />
                 </div>
 
-                {/* Desktop: absolute positioned */}
+               
                 <div className="flex-[2] relative min-h-[500px] hidden lg:block ">
                     <div className="absolute top-[11rem] right-0">
                         <Card icon={<Receipt size={28} />} title="Billing" color="bg-[#2e43ff]" rotation="13" />
