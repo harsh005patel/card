@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/HARSH%20KUKADIYA/OneDrive/Desktop/PAGE/pages/index.jsx"],"sourcesContent":["import Card from '@/components/card.jsx';\r\n\r\nexport default function Home() {\r\n    return (\r\n        <div className=\"min-h-screen p-8 relative\">\r\n            <Card\r\n                icon=\"🚀\"\r\n                title=\"My Card\"\r\n                color=\"bg-purple-600\"\r\n                rotation=\"10\"\r\n                position=\"top-4 left-4\"\r\n            />\r\n        </div>\r\n    );\r\n}"],"names":[],"mappings":";;;;;;;;;;;;AAEe,SAAS;IACpB,qBACI,qKAAC;QAAI,WAAU;kBACX,cAAA,qKAAC;YACG,MAAK;YACL,OAAM;YACN,OAAM;YACN,UAAS;YACT,UAAS;;;;;;;;;;;AAIzB"}}]
+}
