@@ -5,27 +5,27 @@ export default function Home() {
     return (
         <main className="relative min-h-screen overflow-x-clip" style={{ backgroundColor: '#ebedf5', fontFamily: "'Inter', sans-serif" }}>
             {/* Background pills */}
-            <div className="absolute w-96 h-96 rounded-full opacity-30 blur-3xl pointer-events-none" style={{ background: '#b4c8ff', top: '10%', left: '30%' }} />
-            <div className="absolute w-72 h-72 rounded-full opacity-25 blur-3xl pointer-events-none" style={{ background: '#b4c8ff', bottom: '20%', right: '20%' }} />
+            <div className="absolute w-96 h-96 rounded-full opacity-30 blur-3xl pointer-events-none" style={{ background: '#ffffffff', top: '10%', left: '30%' }} />
+            <div className="absolute w-72 h-72 rounded-full opacity-30 blur-3xl pointer-events-none" style={{ background: '#ffffffff', bottom: '20%', right: '20%' }} />
 
             {/* Background  pills */}
-            <div className="absolute top-[7%] right-[-150px] md:right-[-250px] opacity-60">
-                <Card variant="background" color="bg-[#c8cde1]" rotation="5" />
+            <div className="absolute top-[7%] right-[-150px] md:right-[-250px] opacity-30">
+                <Card variant="background" color="bg-[#b8cfff]" rotation="5" />
             </div>
-            <div className="absolute top-[20%] right-[-80px] md:right-[-180px] opacity-60">
-                <Card variant="background" color="bg-[#c8cde1]" rotation="0" />
+            <div className="absolute top-[20%] right-[-80px] md:right-[-180px] opacity-30">
+                <Card variant="background" color="bg-[#b8cfff]" rotation="0" />
             </div>
-            <div className="absolute top-[35%] right-[-180px] md:right-[-280px] opacity-60">
-                <Card variant="background" color="bg-[#c8cde1]" rotation="-1" />
+            <div className="absolute top-[35%] right-[-180px] md:right-[-280px] opacity-30">
+                <Card variant="background" color="bg-[#b8cfff]" rotation="-1" />
             </div>
-            <div className="absolute top-[60%] left-[-300px] md:right-[-200px] opacity-60">
-                <Card variant="background" color="bg-[#c8cde1]" rotation="-10" />
+            <div className="absolute top-[60%] left-[-300px] md:right-[-200px] opacity-30">
+                <Card variant="background" color="bg-[#b8cfff]" rotation="-10" />
             </div>
-            <div className="absolute top-[73%] left-[-210px] md:right-[-260px] opacity-60">
-                <Card variant="background" color="bg-[#c8cde1]" rotation="0" />
+            <div className="absolute top-[73%] left-[-210px] md:right-[-260px] opacity-30">
+                <Card variant="background" color="bg-[#b8cfff]" rotation="0" />
             </div>
-            <div className="absolute top-[85%] left-[-120px] md:right-[-260px] opacity-60">
-                <Card variant="background" color="bg-[#c8cde1]" rotation="-0" />
+            <div className="absolute top-[85%] left-[-120px] md:right-[-260px] opacity-30">
+                <Card variant="background" color="bg-[#b8cfff]" rotation="-0" />
             </div>
 
             {/* Main content */}

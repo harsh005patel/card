@@ -12,7 +12,7 @@ export default function Card({
     if (variant === "background") {
         return (
             <div
-                className={`${color} rounded-full opacity-40 pointer-events-none w-[250px] h-[40px] md:w-[500px] md:h-[70px]`}
+                className={`${color} rounded-full opacity-100 pointer-events-none w-[250px] h-[40px] md:w-[500px] md:h-[70px]`}
                 style={{ transform: `rotate(${rotation}deg)` }}
             />
         );
