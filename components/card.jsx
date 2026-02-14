@@ -20,29 +20,28 @@ export default function Card({
 
     if (variant === "portal") {
         return (
-            <div
-                className="px-8 py-4 rounded-full shadow-lg inline-flex w-[300px] h-[70px] items-center bg-[#a4aaef]"
-                style={{ transform: `rotate(${rotation}deg)` }}
-            >
-                <div className="flex items-center gap-3">
-                    {/* Accent bar */}
-                    <div className="w-1 h-10 rounded-full bg-orange-400" />
+            <div style={{ transform: `rotate(${rotation}deg)` }} className="inline-block shrink-0">
+                <div className="px-8 py-4 rounded-full shadow-lg inline-flex w-[300px] h-[70px] items-center bg-[#a4aaef] transition-transform duration-300 hover:scale-110 cursor-pointer">
+                    <div className="flex items-center gap-3">
+                        {/* Accent bar */}
+                        <div className="w-1 h-10 rounded-full bg-orange-400" />
 
-                    {/* Avatar */}
-                    <div className="w-16 h-10.5 rounded-full bg-amber-300 flex items-center justify-center text-sm">
-                        {icon}
-                    </div>
+                        {/* Avatar */}
+                        <div className="w-16 h-10.5 rounded-full bg-amber-300 flex items-center justify-center text-sm">
+                            {icon}
+                        </div>
 
-                    {/* Text */}
-                    <div>
-                        <div className="text-xs font-bold text-black">
-                            {title}
-                        </div>
-                        <div className="text-xs text-[#797da7]">
-                            {subtitle}
-                        </div>
-                        <div className="text-xs mt-0.5 text-[#797da7]">
-                            {meta}
+                        {/* Text */}
+                        <div>
+                            <div className="text-xs font-bold text-black">
+                                {title}
+                            </div>
+                            <div className="text-xs text-[#797da7]">
+                                {subtitle}
+                            </div>
+                            <div className="text-xs mt-0.5 text-[#797da7]">
+                                {meta}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -56,13 +55,12 @@ export default function Card({
     const titleClass = titleColor ? "text-2xl font-medium" : "text-white text-2xl font-medium";
 
     return (
-        <div
-            className={`${color} px-8 py-4 rounded-full shadow-lg inline-flex w-[300px] h-[70px] items-center`}
-            style={{ transform: `rotate(${rotation}deg)` }}
-        >
-            <div className="flex items-center gap-3">
-                <span className={iconClass} style={textStyle}>{icon}</span>
-                <h1 className={titleClass} style={textStyle}>{title}</h1>
+        <div style={{ transform: `rotate(${rotation}deg)` }} className="inline-block shrink-0">
+            <div className={`${color} px-8 py-4 rounded-full shadow-lg inline-flex w-[300px] h-[70px] items-center transition-transform duration-300 hover:scale-110 cursor-pointer`}>
+                <div className="flex items-center gap-3">
+                    <span className={iconClass} style={textStyle}>{icon}</span>
+                    <h1 className={titleClass} style={textStyle}>{title}</h1>
+                </div>
             </div>
         </div>
     );
