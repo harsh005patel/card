@@ -45,21 +45,26 @@ export default function Home() {
                 {/* Right: Floating cards */}
                 {/* Mobile: stacked */}
                 <div className="flex flex-col items-center gap-5 lg:hidden">
-                    <Card icon={<Receipt size={24} />} title="Billing" color="bg-blue-600" rotation="0" />
-                    <Card icon={<Gavel size={24} />} title="Matters" color="bg-orange-500" rotation="0" />
+                    <Card icon={<Receipt size={24} />} title="Billing" color="bg-[#2e43ff]" rotation="0" />
+                    <Card icon={<Gavel size={24} />} title="Matters" color="bg-[#e37b2c]" rotation="0" />
                     <Card
                         icon={<User size={20} />}
                         title="John Doe - Portal"
                         subtitle="Hey! Could you please review a document for me?"
-                        meta="MBT-3237 · 2 h ago"
+                        meta={<>
+                            <span className="underline ">
+                                MBT-3237
+                            </span>
+                            {" - 2 h ago"}
+                        </>}
                         variant="portal"
                         rotation="0"
                     />
-                    <Card icon={<CheckSquare size={24} />} title="Tasks" color="bg-gray-800" rotation="0" />
-                    <Card icon={<FileText size={24} />} title="Documents" color="bg-gray-900" rotation="0" />
+                    <Card icon={<CheckSquare size={24} />} title="Tasks" color="bg-[#322847]" rotation="0" titleColor="#e37b2c" />
+                    <Card icon={<FileText size={24} />} title="Documents" color="bg-[#322847]" rotation="0" titleColor="#e37b2c" />
                 </div>
 
-               
+
                 <div className="flex-[2] relative min-h-[500px] hidden lg:block ">
                     <div className="absolute top-[11rem] right-0">
                         <Card icon={<Receipt size={28} />} title="Billing" color="bg-[#2e43ff]" rotation="13" />
@@ -86,11 +91,11 @@ export default function Home() {
                     </div>
 
                     <div className="absolute top-[30rem] -left-[160px]">
-                        <Card icon={<CheckSquare size={28} />} title="Tasks" color="bg-[#322847]" rotation="0"  titleColor="#e37b2c" />
+                        <Card icon={<CheckSquare size={28} />} title="Tasks" color="bg-[#322847]" rotation="0" titleColor="#e37b2c" />
                     </div>
 
                     <div className="absolute top-[440px] right-[-200px] mr-20">
-                        <Card icon={<FileText size={28} />} title="Documents" color="bg-[#322847]" rotation="-7"  titleColor="#e37b2c" />
+                        <Card icon={<FileText size={28} />} title="Documents" color="bg-[#322847]" rotation="-7" titleColor="#e37b2c" />
                     </div>
                 </div>
             </div>
