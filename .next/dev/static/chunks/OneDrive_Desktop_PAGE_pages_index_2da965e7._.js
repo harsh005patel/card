@@ -6,7 +6,7 @@
   "static/chunks/e69c5_next_dist_client_bcc3fe7c._.js",
   "static/chunks/e69c5_next_dist_0d10cf63._.js",
   "static/chunks/e69c5_react-dom_dc99ab43._.js",
-  "static/chunks/e69c5_32db0a63._.js",
+  "static/chunks/e69c5_e9e68c68._.js",
   "static/chunks/[root-of-the-server]__819bbaba._.js"
 ],
     source: "entry"

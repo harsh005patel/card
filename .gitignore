@@ -19,6 +19,10 @@ node_modules/
 # Build folders
 dist/
 build/
+.next/
+out/
+.vercel
+
 
 # IDE files
 .vscode/
